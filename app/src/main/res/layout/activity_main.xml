@@ -48,12 +48,12 @@
         android:id="@+id/content"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_above="@id/footer"
+        android:layout_above="@id/contact_us"
         android:layout_below="@id/header"
         android:gravity="center">
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:scaleType="centerCrop"
             android:alpha="0.7"
             android:src="@drawable/coffee_beans"/>
@@ -65,7 +65,69 @@
             android:layout_marginTop="30dp"
 
             />
+        <Button
+            android:id="@+id/coffee_store_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To The Coffee Store..."
+            android:layout_marginTop="35dp"
+            />
 
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6060FF"
+        android:layout_above="@+id/footer"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:id="@+id/c_u_label"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="5"
+            android:orientation="horizontal"
+            android:layout_below="@id/c_u_label"
+            android:textSize="16dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="simply_great_coffee@gmail.com"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="052-8123456"
+                android:layout_marginRight="10dp"
+                />
+        </GridLayout>
     </RelativeLayout>
 
     <RelativeLayout
@@ -75,7 +137,7 @@
         android:layout_alignParentBottom="true"
         android:background="#60360F"
         android:gravity="center">
-        
+
         <Button
             android:id="@+id/cs_button"
             android:layout_width="wrap_content"
