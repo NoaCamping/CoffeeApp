@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs"
+    android:orientation="vertical"
+    android:background="#D3D3D3">
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:padding="20dp"
+        android:id="@+id/about_first_p">
+        <TextView
+            android:text="About Us"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:text="As a child, whenever I passed by a coffee shop, I was overwhelmed by the odor. I liked the smell of the roasted beans"
+            android:paddingBottom="3dp"/>
+        <TextView
+            android:text="I grew up and learned all about coffee. It became my passion to find the right coffee for every friend or visitor who jumped by"
+            android:paddingBottom="3dp"/>
+        <TextView
+            android:text="I have a pleasure to work at what I do best: "
+            android:paddingBottom="5dp"/>
+        <TextView android:text="Coffee - We know what will suit you BEST"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            />
+    </GridLayout>
+    <ImageView
+        android:src="@drawable/coffee_beans"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/about_first_p"/>
+</RelativeLayout>
