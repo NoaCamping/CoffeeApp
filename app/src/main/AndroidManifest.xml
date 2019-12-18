@@ -20,6 +20,9 @@
             android:label="Suiting The Right Coffee For You"></activity>
         <activity android:name=".CoffeeShopActivity"
             android:label="List Of Coffee Shops"></activity>
+        <activity android:name=".SearchActivity"
+            android:label="Searching The Best For You"
+            ></activity>
     </application>
 
 </manifest>

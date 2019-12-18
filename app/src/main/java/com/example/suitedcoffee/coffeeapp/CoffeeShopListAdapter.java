@@ -9,20 +9,18 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 
-public class CoffeeShopAdapter extends ArrayAdapter<CoffeeShop> {
+public class CoffeeShopListAdapter extends ArrayAdapter<CoffeeShop> {
 
     /**
-     * Create a new {@link CoffeeShopAdapter} object
+     * Create a new {@link CoffeeShopListAdapter} object
      *
      * @param context is the current context that the adapter is being created in
      * @param cs is the list  of coffee shops to be displayed
      *
      */
-    public CoffeeShopAdapter(Context context, ArrayList<CoffeeShop> cs)
+    public CoffeeShopListAdapter(Context context, ArrayList<CoffeeShop> cs)
     {
         super(context,0,cs);
     }

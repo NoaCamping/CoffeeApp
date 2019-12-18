@@ -19,29 +19,27 @@
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:src="@drawable/coffee"
+            android:gravity="center"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Great Coffee"
             android:textColor="#000"
-            android:layout_marginLeft="5dp"
+            android:layout_marginRight="150dp"
             />
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="Search"/>
+            android:drawableLeft="@drawable/magnifying_glass3"
+            android:id="@+id/search_coffee_btn"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/person3"
+            android:id="@+id/login_btn"
+            />
 
-            android:text="Login"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:text="Menu"/>
     </LinearLayout>
 
     <RelativeLayout
@@ -65,13 +63,19 @@
             android:layout_marginTop="30dp"
 
             />
-        <Button
-            android:id="@+id/coffee_store_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="To The Coffee Store..."
-            android:layout_marginTop="35dp"
-            />
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/quiz_button"
+           >
+           <Button
+               android:id="@+id/coffee_store_button"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="To The Coffee Store..."
+
+               />
+       </RelativeLayout>
 
     </RelativeLayout>
 
@@ -100,6 +104,7 @@
             android:orientation="horizontal"
             android:layout_below="@id/c_u_label"
             android:textSize="16dp"
+            android:id="@+id/contact_grid_view"
             >
 
 
@@ -128,6 +133,34 @@
                 android:layout_marginRight="10dp"
                 />
         </GridLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register To Our Club"
+            android:layout_below="@id/contact_grid_view"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/register"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register"
+            android:layout_marginLeft="50dp">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Insert your email address"
+                    android:id="@+id/join_club_txt_box"
+                    android:background="#FFF"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Join"/>
+        </LinearLayout>
     </RelativeLayout>
 
     <RelativeLayout
