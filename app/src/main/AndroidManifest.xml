@@ -23,6 +23,10 @@
         <activity android:name=".SearchActivity"
             android:label="Searching The Best For You"
             ></activity>
+        <activity android:name=".AboutUs"
+            android:label="About Us"></activity>
+
+
     </application>
 
 </manifest>

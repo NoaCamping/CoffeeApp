@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".AboutUs"
     android:orientation="vertical"
-    android:background="#D3D3D3">
+    android:background="#D3D3D3"
+    android:id="@+id/about_us_description">
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,8 +35,8 @@
             />
     </GridLayout>
     <ImageView
-        android:src="@drawable/coffee_beans"
-        android:layout_height="wrap_content"
+        android:src="@drawable/coffee_cup"
+        android:layout_height="100dp"
         android:layout_width="wrap_content"
         android:layout_below="@+id/about_first_p"/>
 </RelativeLayout>

@@ -1,11 +1,16 @@
 package com.example.suitedcoffee.coffeeapp;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
@@ -13,7 +18,11 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
+    Button stores_btn;
+    FragmentManager fm=getFragmentManager();
+    FragmentTransaction ft=fm.beginTransaction();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,20 +56,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(questingIntent);
             }
         });
-
-        //finding the view that shows the coffee shops location
-        TextView csLocation=(TextView)findViewById(R.id.cs_button);
-        csLocation.setOnClickListener(new OnClickListener(){
-            //code in this method will be executed when cs_button is pressed
-            @Override
-            public void onClick(View view){
-                Intent cs_searchIntent=new Intent(MainActivity.this,CoffeeShopActivity.class);
-                //start the new activity
-                startActivity(cs_searchIntent);
-            }
-        });
-
+        stores_btn=(Button)findViewById(R.id.coffee_shops_button);
+        /*Fragment fragment=new Footer_Fragment();
+        ft.replace(R.id.fragment1,fragment);
+        ft.commit();*/
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
@@ -79,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "clicked about", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.coffee_shop:
-
                 Toast.makeText(this, "clicked coffee shop", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.contact_us:

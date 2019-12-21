@@ -39,41 +39,49 @@
             android:drawableLeft="@drawable/person3"
             android:id="@+id/login_btn"
             />
-
     </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/content"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_above="@id/contact_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/header"
         android:gravity="center">
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
             android:scaleType="centerCrop"
-            android:alpha="0.7"
-            android:src="@drawable/coffee_beans"/>
+            android:alpha="1"
+            android:src="@drawable/write_coffee"/>
         <Button
             android:id="@+id/quiz_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Take Quiz"
-            android:layout_marginTop="30dp"
-
+            android:textSize="16dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="270dp"
             />
        <RelativeLayout
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_below="@id/quiz_button"
            >
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="100dp"
+               android:scaleType="centerCrop"
+               android:src="@drawable/coffee_beans"/>
            <Button
                android:id="@+id/coffee_store_button"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="To The Coffee Store..."
-
+               android:layout_marginTop="50dp"
+               android:layout_marginLeft="200dp"
                />
        </RelativeLayout>
 
@@ -84,7 +92,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#6060FF"
-        android:layout_above="@+id/footer"
+        android:layout_below="@+id/content"
         android:paddingLeft="10dp">
 
         <TextView
@@ -163,24 +171,12 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/footer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="#60360F"
-        android:gravity="center">
+    <fragment
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/fragment1"
+        android:layout_below="@+id/contact_us"
+        class="com.example.suitedcoffee.coffeeapp.Footer_Fragment">
 
-        <Button
-            android:id="@+id/cs_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Coffee Shops"
-            android:layout_marginTop="30dp"
-
-            />
-    </RelativeLayout>
-
-
-
+    </fragment>
 </RelativeLayout>
