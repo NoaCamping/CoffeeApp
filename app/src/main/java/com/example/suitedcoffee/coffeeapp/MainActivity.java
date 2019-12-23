@@ -21,10 +21,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    FragmentManager fm=getFragmentManager();
-    FragmentTransaction ft=fm.beginTransaction();
-
-    @Override
+     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -70,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(csvIntent);
             }
         });
-        
+
     }
 
 
@@ -88,13 +85,17 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "clicked home", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.about:
-                Toast.makeText(this, "clicked about", Toast.LENGTH_SHORT).show();
+                Intent about_intent=new Intent(this,AboutUs.class);
+                startActivity(about_intent);
+                //Toast.makeText(this, "clicked about", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.coffee_shop:
                 Toast.makeText(this, "clicked coffee shop", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.contact_us:
-                Toast.makeText(this, "clicked contact us", Toast.LENGTH_SHORT).show();
+                Intent contact_us_intent=new Intent(this,ContactUs.class);
+                startActivity(contact_us_intent);
+                //Toast.makeText(this, "clicked contact us", Toast.LENGTH_SHORT).show();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

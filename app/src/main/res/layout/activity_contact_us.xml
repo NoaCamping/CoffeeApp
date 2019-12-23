@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs"
+    android:orientation="vertical"
+    android:background="#D3D3D3"
+    android:id="@+id/contact_us_description">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:id="@+id/c_u_label"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:paddingBottom="10dp"
+                />
+        </TableRow>
+        <TableRow>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="5"
+                android:orientation="horizontal"
+                android:layout_below="@id/c_u_label"
+                android:textSize="16dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/contact_grid_view"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:layout_marginRight="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="simply_great_coffee@gmail.com"
+                    android:layout_marginRight="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:layout_marginRight="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="052-8123456"
+                    android:layout_marginRight="10dp"
+                    />
+            </GridLayout>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment1"
+        android:layout_alignParentBottom="true"
+        class="com.example.suitedcoffee.coffeeapp.Footer_Fragment">
+
+    </fragment>
+</RelativeLayout>

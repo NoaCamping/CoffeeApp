@@ -38,5 +38,15 @@
         android:src="@drawable/coffee_cup"
         android:layout_height="100dp"
         android:layout_width="wrap_content"
-        android:layout_below="@+id/about_first_p"/>
+        android:layout_below="@+id/about_first_p"
+        android:id="@+id/img_about_us"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment1"
+        android:layout_alignParentBottom="true"
+        class="com.example.suitedcoffee.coffeeapp.Footer_Fragment">
+
+    </fragment>
 </RelativeLayout>

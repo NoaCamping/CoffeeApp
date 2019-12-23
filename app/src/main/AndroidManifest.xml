@@ -25,7 +25,8 @@
             ></activity>
         <activity android:name=".AboutUs"
             android:label="About Us"></activity>
-
+        <activity android:name=".ContactUs"
+            android:label="Contact Us"></activity>
 
     </application>
 
