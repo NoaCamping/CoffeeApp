@@ -18,11 +18,12 @@ public class CoffeeShopActivity extends AppCompatActivity
         cs_list.add(new CoffeeShop("Coffee4u","John","0528123456"));
         cs_list.add(new CoffeeShop("Fresh_n_up","Mary","0528123457"));
 
-        /*
+
         CoffeeShopListAdapter itemsAdapter=
                 new CoffeeShopListAdapter(this,cs_list);
+        //ListView listView=(ListView)findViewById(R.id.the_cs_list);
         ListView listView=(ListView)findViewById(R.id.the_cs_list);
-        listView.setAdapter(itemsAdapter);*/
+        listView.setAdapter(itemsAdapter);
 
 
 

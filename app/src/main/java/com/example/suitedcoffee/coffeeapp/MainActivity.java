@@ -20,7 +20,7 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
-    Button stores_btn;
+
     FragmentManager fm=getFragmentManager();
     FragmentTransaction ft=fm.beginTransaction();
 
@@ -56,10 +56,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(questingIntent);
             }
         });
-        stores_btn=(Button)findViewById(R.id.coffee_shops_button);
-        /*Fragment fragment=new Footer_Fragment();
-        ft.replace(R.id.fragment1,fragment);
-        ft.commit();*/
+
+        //finding the view that shows the questionnaire
+        TextView coffee_shops_v=(TextView)findViewById(R.id.coffee_shops_button);
+
+        //setting a click listener on that view
+        coffee_shops_v.setOnClickListener(new OnClickListener(){
+            //code in this method will be executed when quiz_button is pressed
+            @Override
+            public void onClick(View view){
+                Intent csvIntent=new Intent(MainActivity.this,CoffeeShopActivity.class);
+                //start the new activity
+                startActivity(csvIntent);
+            }
+        });
+        
     }
 
 
