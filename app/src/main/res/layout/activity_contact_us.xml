@@ -7,13 +7,23 @@
     tools:context=".AboutUs"
     android:orientation="vertical"
     android:background="#D3D3D3"
-    android:id="@+id/contact_us_description">
+    android:id="@+id/contact_us_description"
+    >
 
-    <TableLayout
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/write_coffee1"
+        android:id="@+id/contact_us_banner"
+        />
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/contact_us_banner"
+
         >
-        <TableRow>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -21,10 +31,8 @@
                 android:id="@+id/c_u_label"
                 android:textStyle="bold"
                 android:textSize="20dp"
-                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
                 />
-        </TableRow>
-        <TableRow>
 
             <GridLayout
                 android:layout_width="wrap_content"
@@ -37,7 +45,6 @@
                 android:layout_marginLeft="20dp"
                 android:id="@+id/contact_grid_view"
                 >
-
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -64,12 +71,169 @@
                     android:layout_marginRight="10dp"
                     />
             </GridLayout>
+    </RelativeLayout>
 
-        </TableRow>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:orientation="vertical"
+        android:textSize="12dp"
+        android:layout_above="@+id/fragment1"
+        >
+            <RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For You..."
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:id="@+id/contact_us_intro"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Any Question Any Time"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:id="@+id/contact_us_intro_0"
+                    android:layout_below="@+id/contact_us_intro"
+                    />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:layout_below="@+id/contact_us_intro_0"
+                    android:id="@+id/contact_us_intro_1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Email address"
+                    android:layout_below="@+id/contact_us_intro_1"
+                    android:id="@+id/contact_us_intro_2"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone number"
+                    android:layout_below="@+id/contact_us_intro_2"
+                    android:id="@+id/contact_us_intro_3"/>
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contact_us_intro_3"
+                    android:id="@+id/contact_us_intro_4">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Insert your text"
+                        android:scrollbars="vertical"
+                        android:lines="4"
+                        />
+                </ScrollView>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send"
+                    android:layout_below="@+id/contact_us_intro_4"
+                    android:id="@+id/contact_us_btn"/>
+
+            </RelativeLayout>
+            <RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If we have to exactly define what"
+
+                    android:id="@+id/contact_us_line1"
+                    android:textStyle="italic"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="is a coffee expert, we would"
+
+                    android:id="@+id/contact_us_line2"
+                    android:layout_below="@+id/contact_us_line1"
+                    android:textStyle="italic"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="say a great cook and a great"
+
+                    android:layout_below="@+id/contact_us_line2"
+                    android:id="@+id/contact_us_line3"
+                    android:textStyle="italic"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="researcher.\n"
+                    android:layout_below="@+id/contact_us_line3"
+                    android:id="@+id/contact_us_line4"
+                    android:textStyle="italic"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="We research coffee so you can"
+
+                    android:layout_below="@+id/contact_us_line4"
+                    android:id="@+id/contact_us_line5"
+                    android:textStyle="italic"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="get the best coffee for you"
+
+                    android:layout_below="@+id/contact_us_line5"
+                    android:id="@+id/contact_us_line6"
+                    android:textStyle="italic"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You can address us with any"
+
+                    android:layout_below="@+id/contact_us_line6"
+                    android:id="@+id/contact_us_line7"
+                    android:textStyle="italic"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="question or problem, \n"
+
+                    android:layout_below="@+id/contact_us_line7"
+                    android:id="@+id/contact_us_line8"
+                    android:textStyle="italic"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yours,"
+                    android:layout_marginLeft="0dp"
+                    android:layout_below="@+id/contact_us_line8"
+                    android:id="@+id/contact_us_line9"
+                    android:textStyle="italic"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simply Great Coffee"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@+id/contact_us_line9"
+                    android:id="@+id/contact_us_line10"
+                    android:textStyle="bold"
+                    />
+            </RelativeLayout>
 
 
-    </TableLayout>
-
+    </GridLayout>
 
     <fragment
         android:layout_width="match_parent"
