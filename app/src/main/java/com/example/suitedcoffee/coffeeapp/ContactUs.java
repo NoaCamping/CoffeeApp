@@ -33,6 +33,12 @@ public class ContactUs extends AppCompatActivity {
             public void onClick(View view){
                 //Toast.makeText(ContactUs.this, email.getText()+" ,"+phone.getText(), Toast.LENGTH_SHORT).show();
                 //Inserting messages data into database
+
+                //deleting text from text boxes
+                name.setText("");
+                email.setText("");
+                phone.setText("");
+                message.setText("");
             }
         });
     }

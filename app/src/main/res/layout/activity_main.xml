@@ -102,6 +102,7 @@
             android:id="@+id/c_u_label"
             android:textStyle="bold"
             android:textSize="20dp"
+            android:paddingBottom="4dp"
             />
 
         <GridLayout
@@ -114,7 +115,6 @@
             android:textSize="16dp"
             android:id="@+id/contact_grid_view"
             >
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -141,41 +141,51 @@
                 android:layout_marginRight="10dp"
                 />
         </GridLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff7d47"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/contact_us"
+        android:id="@+id/add_email">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Register To Our Club"
-            android:layout_below="@id/contact_grid_view"
+
+            android:paddingTop="40dp"
             android:textStyle="bold"
             android:textSize="20dp"
             android:id="@+id/register"/>
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/register"
             android:layout_marginLeft="50dp">
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint="Insert your email address"
-                    android:id="@+id/join_club_txt_box"
-                    android:background="#FFF"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:paddingTop="2dp"
-                    android:paddingBottom="2dp"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Join"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Insert your email address"
+                android:id="@+id/join_club_txt_box"
+                android:background="#FFF"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Join"
+                android:id="@+id/email_join_club"/>
         </LinearLayout>
     </RelativeLayout>
-
     <fragment
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/fragment1"
-        android:layout_below="@+id/contact_us"
+        android:layout_below="@+id/add_email"
         class="com.example.suitedcoffee.coffeeapp.Footer_Fragment">
 
     </fragment>

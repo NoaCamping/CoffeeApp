@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //finding the view that shows the questionnaire
+        //finding the view that shows the list of coffee shops
         TextView coffee_shops_v=(TextView)findViewById(R.id.coffee_shops_button);
 
         //setting a click listener on that view
@@ -65,6 +65,20 @@ public class MainActivity extends AppCompatActivity {
                 Intent csvIntent=new Intent(MainActivity.this,CoffeeShopActivity.class);
                 //start the new activity
                 startActivity(csvIntent);
+            }
+        });
+
+        Button getEmail=(Button)findViewById(R.id.email_join_club);
+        final TextView new_join=(TextView)findViewById(R.id.join_club_txt_box);
+
+        getEmail.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, new_join.getText(), Toast.LENGTH_SHORT).show();
+                //updating email address to database
+
+                //deleting text in textbox
+                new_join.setText("");
             }
         });
 
