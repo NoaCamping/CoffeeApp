@@ -28,8 +28,7 @@
         <activity android:name=".ContactUs"
             android:label="Contact Us"
             android:windowSoftInputMode="adjustPan"></activity>
-        <activity android:name=".ContactUsActivity"
-            android:label="ContactUsActivity"></activity>
+
 
     </application>
 
