@@ -27,12 +27,13 @@
             android:text="Great Coffee"
             android:textColor="#000"
             android:layout_marginRight="150dp"
+            android:paddingLeft="5dp"
             />
         <Button
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/magnifying_glass3"
-            android:id="@+id/search_coffee_btn"/>
+            android:drawableLeft="@drawable/ic_shopping_cart_black_24dp"
+            android:id="@+id/cart_btn"/>
         <Button
             android:layout_width="40dp"
             android:layout_height="wrap_content"
