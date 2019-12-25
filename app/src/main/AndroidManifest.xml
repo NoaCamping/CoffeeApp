@@ -26,7 +26,10 @@
         <activity android:name=".AboutUs"
             android:label="About Us"></activity>
         <activity android:name=".ContactUs"
-            android:label="Contact Us"></activity>
+            android:label="Contact Us"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".ContactUsActivity"
+            android:label="ContactUsActivity"></activity>
 
     </application>
 
