@@ -28,8 +28,10 @@
         <activity android:name=".ContactUs"
             android:label="Contact Us"
             android:windowSoftInputMode="adjustPan"></activity>
-
+        <activity android:name=".StoreActivity"
+            android:label="Our Store"
+            ></activity>
 
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

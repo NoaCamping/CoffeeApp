@@ -1,5 +1,6 @@
 package com.example.suitedcoffee.coffeeapp;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -47,6 +48,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(questingIntent);
             }
         });
+
+         //finding the view that shows the coffee store
+         TextView coffee_store_v=(TextView)findViewById(R.id.coffee_store_button);
+
+         //setting a click listener on that view
+         coffee_store_v.setOnClickListener(new OnClickListener(){
+             //code in this method will be executed when quiz_button is pressed
+             @Override
+             public void onClick(View view){
+                 Intent cstoreIntent=new Intent(MainActivity.this,StoreActivity.class);
+                 //start the new activity
+                 startActivity(cstoreIntent);
+             }
+         });
 
         //finding the view that shows the list of coffee shops
         TextView coffee_shops_v=(TextView)findViewById(R.id.coffee_shops_button);
