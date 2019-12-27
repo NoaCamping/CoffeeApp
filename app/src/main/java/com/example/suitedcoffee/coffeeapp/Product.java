@@ -8,6 +8,7 @@ public class Product {
     private int quantity=0;
     private double total_sum=0.0;
     private int discount=0;
+    private int weight=500;
 
     /**
      * Constructor
@@ -39,6 +40,18 @@ public class Product {
         this.total_sum=(1.0*(100-discount)*price*quantity)/100.0;
     }
 
+    /**
+     * Constructor
+     */
+    public Product(String name, double price, int quantity, int discount, int weight)
+    {
+        this.name=name;
+        this.price=price;
+        this.quantity=quantity;
+        this.total_sum=(1.0*(100-discount)*price*quantity)/100.0;
+        this.weight=weight;
+    }
+
     //Getters
     public String getName(){
         return name;
@@ -47,6 +60,7 @@ public class Product {
     public double getPrice(){return price;}
     public double getTotal(){return total_sum;}
     public int getDiscount(){return discount;}
+    public int getWeight(){return weight;}
 
     //Setters
     public void setName(String name){this.name=name;}
@@ -64,4 +78,5 @@ public class Product {
     }
 
     public void setDiscount(int discount){this.discount=discount;}
+    public void setWeight(int weight){this.weight=weight;}
 }
